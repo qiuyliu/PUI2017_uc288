@@ -1,4 +1,4 @@
-#PUI2017_uc288
+# PUI2017_uc288
 
 ## Creating the environment variable
 1. Open up `./bash_profile`
