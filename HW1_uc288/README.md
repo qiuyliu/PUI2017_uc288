@@ -10,6 +10,13 @@ Afterwards, Christian Moscardi (clm633) was looking for partner to complete the 
 ## Assignment 2 - Setting up the environment
 For setting up the environment variable and alias, I was able to complete the steps on my own.
 
+Screenshots:
+#### .bash_profile
+![.bash_profile screenshot](/screenshot/bash_profile.png)
+
+#### Testing the alias
+![Terminal screenshot](/screenshots/env_variable.png)
+
 ## Assignment 3 - Reproducible Research
 ### Work balance
 Worked with Rachel Lim, Juan Sokoloff, Julian Ferreiro on the coding.
@@ -20,4 +27,5 @@ Worked with Rachel Lim, Juan Sokoloff, Julian Ferreiro on the coding.
 * To get an idea of the 'expected' plot, Shreya, Alex and Ruben were discussing their results in our group chat and we tried to work in getting that plot.
 * Rachel and I were wondering which values were supposed to be on the X-axis and the Y-axis and she figured out that using `ReprRandAll[i,0]` and `ReprRandAll[i,1]` will be the X and Y axis, respectively.
 * For the plot, Rachel initially used `'ro'` for the color and style and asked how I got different colors so I explained that the `r` stands for red and the `o` stands for circle, so she can simply use `'o'` to allow the plot to use different colors. Later on, Baiyue also had the same question.
+* For the challenge, based on the existing knowledge on which data need to be manipulated, I simply created one random variable to be the mean for X and another for the mean of Y and added that to each array.
 
