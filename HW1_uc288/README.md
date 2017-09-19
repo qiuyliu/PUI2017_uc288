@@ -19,3 +19,5 @@ Worked with Rachel Lim, Juan Sokoloff, Julian Ferreiro on the coding.
 * For generating the 50 additional arrays, I got the idea of using `numpy.random.randint()` from Rachel where she added that to her arrays. I used the formula in the docs to use the same function for `sigma` and `mu`.
 * To get an idea of the 'expected' plot, Shreya, Alex and Ruben were discussing their results in our group chat and we tried to work in getting that plot.
 * Rachel and I were wondering which values were supposed to be on the X-axis and the Y-axis and she figured out that using `ReprRandAll[i,0]` and `ReprRandAll[i,1]` will be the X and Y axis, respectively.
+* For the plot, Rachel initially used `'ro'` for the color and style and asked how I got different colors so I explained that the `r` stands for red and the `o` stands for circle, so she can simply use `'o'` to allow the plot to use different colors. Later on, Baiyue also had the same question.
+
