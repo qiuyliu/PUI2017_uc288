@@ -33,8 +33,8 @@ print('Number of Active Buses : ' + str(bus_count))
 
 for i in range(bus_count):
     busloc = buslist[i]['MonitoredVehicleJourney']['VehicleLocation']
-	print('Bus ' + str(i) + ' is at latitude ' + str(busloc['Latitude']) + \
-		' and longitude' + str(busloc['Longitude']))
+    print('Bus ' + str(i) + ' is at latitude ' + str(busloc['Latitude']) \
+        + ' and longitude' + str(busloc['Longitude']))
 
 
 
