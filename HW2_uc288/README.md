@@ -12,10 +12,13 @@ Found that the needed parameters are the following:
 
 Based the JSON file reading on the sample scripts available from the lab.
 
-To understand the JSON file, I used an online JSON formatter ([www.jsonformatter.org](www.jsonformatter.org)) to view the response from running the URL in a browser. Switched to the `Tree` view after formatting it.
+To understand the JSON file, I used an online JSON formatter ([www.jsonformatter.org](http://www.jsonformatter.org)) to view the response from running the URL in a browser. Switched to the `Tree` view after formatting it.
 
 The `VehicleActivity` contains all the buses running in that route.
 In that, the `VehicleLocation` contains the longitude and the latitude which is needed to print the information.
+
+**Additional error handling done:**
+I wanted to test out how the script would work when the parameters passed were not in the right order so I added more try except statements. I also entered an invalid bus route and got another `KeyError` so I added that as well.
 
 #### Work distribution
 I worked on my code alone using lab examples and Google for Python syntax issues I encountered. I learned that when working with long strings, the concatenating symbol `+` should never be at the end of the line or it will cause a syntax error.

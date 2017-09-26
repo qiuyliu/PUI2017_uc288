@@ -17,32 +17,41 @@ key = sys.argv[1]
 bus_line = sys.argv[2]
 output_file = sys.argv[3]
 
-fout = open(output_file, 'w')
-
 mta_url = 'http://bustime.mta.info/api/siri/vehicle-monitoring.json?key=' \
           + key + '&VehicleMonitoringDetailLevel=calls&LineRef=' + bus_line
 
 print('Bus Line : ' + bus_line)
 
-response = urllib.urlopen(mta_url)
-data = response.read().decode('utf-8')
-data = json.loads(data)
+try:
+   response = urllib.urlopen(mta_url)
+   data = response.read().decode('utf-8')
+   data = json.loads(data)
+except urllib.HTTPError:
+    print('Invalid URL!!!')
+    sys.exit()
 
-buslist = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'] \
-	      [0]['VehicleActivity']
-bus_count = len(buslist)
+try:
+    bus_list = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'] \
+	          [0]['VehicleActivity']
+    bus_count = len(bus_list)
+except KeyError:
+    print('No bus activity found for bus line ' + bus_line)
+    sys.exit()
 
 print('Number of Active Buses : ' + str(bus_count))
+
+fout = open(output_file, 'w')
 
 fout.write('Latitude,Longitude,Stop Name,Stop Status\n')
 
 for i in range(bus_count):
-    busloc = buslist[i]['MonitoredVehicleJourney']['VehicleLocation']
-    print('Bus ' + str(i) + ' is at latitude ' + str(busloc['Latitude']) \
-        + ' and longitude' + str(busloc['Longitude']))
+    bus_loc = bus_list[i]['MonitoredVehicleJourney']['VehicleLocation']
+    print('Bus ' + str(i) + ' is at latitude ' + str(bus_loc['Latitude']) \
+        + ' and longitude' + str(bus_loc['Longitude']))
 
     try:
-        next_stops = buslist[i]['MonitoredVehicleJourney']['OnwardCalls']['OnwardCall']
+        next_stops = bus_list[i]['MonitoredVehicleJourney'] \
+                    ['OnwardCalls']['OnwardCall']
     except KeyError:
         next_stops = []
 
@@ -53,7 +62,7 @@ for i in range(bus_count):
         stop_name = next_stops[0]['StopPointName']
         stop_status = next_stops[0]['Extensions']['Distances']['PresentableDistance']
 
-    fout.write(str(busloc['Latitude']) + ',' + str(busloc['Longitude']) + ',' \
+    fout.write(str(bus_loc['Latitude']) + ',' + str(bus_loc['Longitude']) + ',' \
                + stop_name + ',' + stop_status + '\n')
 
 fout.write('\n')

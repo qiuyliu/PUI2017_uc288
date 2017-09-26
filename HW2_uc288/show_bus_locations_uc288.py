@@ -21,20 +21,28 @@ mta_url = 'http://bustime.mta.info/api/siri/vehicle-monitoring.json?key=' \
 
 print('Bus Line : ' + bus_line)
 
-response = urllib.urlopen(mta_url)
-data = response.read().decode('utf-8')
-data = json.loads(data)
+try:
+   response = urllib.urlopen(mta_url)
+   data = response.read().decode('utf-8')
+   data = json.loads(data)
+except urllib.HTTPError:
+    print('Invalid URL!!!')
+    sys.exit()
 
-buslist = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'] \
-	        [0]['VehicleActivity']
-bus_count = len(buslist)
+try:
+    bus_list = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'] \
+              [0]['VehicleActivity']
+    bus_count = len(bus_list)
+except KeyError:
+    print('No bus activity found for bus line ' + bus_line)
+    sys.exit()
 
 print('Number of Active Buses : ' + str(bus_count))
 
 for i in range(bus_count):
-    busloc = buslist[i]['MonitoredVehicleJourney']['VehicleLocation']
-    print('Bus ' + str(i) + ' is at latitude ' + str(busloc['Latitude']) \
-        + ' and longitude' + str(busloc['Longitude']))
+    bus_loc = bus_list[i]['MonitoredVehicleJourney']['VehicleLocation']
+    print('Bus ' + str(i) + ' is at latitude ' + str(bus_loc['Latitude']) \
+        + ' and longitude' + str(bus_loc['Longitude']))
 
 
 
