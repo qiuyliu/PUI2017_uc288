@@ -8,9 +8,9 @@ except ImportError:
     import urllib.request as urllib
 
 if not len(sys.argv) == 3:
-    print('''Invalid number of arguments!
-    To run script:
-    python show_bus_locations_uc288.py <MTA_KEY> <BUS_LINE>''')
+    print('Invalid number of arguments!\n' \
+    + 'To run script: ' \
+    + 'python show_bus_locations_uc288.py <MTA_KEY> <BUS_LINE>')
     sys.exit()
 
 key = sys.argv[1]
