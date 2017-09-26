@@ -43,4 +43,9 @@ To find the data to be used, I went to the [CUSP Data Catalog](https://datahub.c
 For the Pandas data manipulation, based the work on the lab done in class. Plotting code is similar to the previous homework done.
 
 #### Work distribution
-Going to the CUSP Data Catalog and clicking the link in that page did not work. **Rebecca Scheidegger** suggested to go through the Quick Links and check the Urban Profiler.
+**Help received:**
+* Going to the CUSP Data Catalog and clicking the link in that page did not work. **Rebecca Scheidegger** suggested to go through the Quick Links and check the Urban Profiler.
+
+**Help provided:**
+* Assisted **Yu Chen** with her table dropping and syntax issues.
+* Helped **Dana Chermesh** with her extra credit homework for handling the date conversion in her code.
