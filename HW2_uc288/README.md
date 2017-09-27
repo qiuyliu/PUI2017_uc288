@@ -30,12 +30,12 @@ I also helped **Yu Chen** with some of the syntax error she was having in Python
 ## Assignment 2
 Working with what was already built from the first assignment, the next stop information is available under `OnwardCalls`. It has an additional key `OnwardCall` which is an array of the next stops. `StopPointName` holds the stop name and based on the sample response, the stop status is in `PresentableDistance`.
 
-To test the "no next stop" scenario, I saved the JSON into a file and deleted the object `OnwardCall` to see what would happen. It gave a `KeyError` so I used the try-except code block to catch it and handle the scenario.
+To test the "no next stop" scenario, I saved the JSON into a file and deleted the object `OnwardCall` to see what would happen. It gave a `KeyError` so I used the try-except code block to catch it and handle the scenario. I did it this way since it would be difficult to keep running the API and wait for a case wherein a bus was at its last stop. It is an assumption and I have not fully tested it on the actual data from the API.
 
 #### Work distribution
 I worked on the code alone using lab examples on how to read and write CSV files.
 
-For the `KeyError` idea, it was discussed in class on how to use the try-except to handle the error. My work experience also helped me in knowing how to remove an element in the JSON object to help with testing. Shared this idea to **Baiyue Cao**.
+For the `KeyError` idea, it was discussed in class on how to use the try-except to handle the error. My work experience also helped me in knowing how to remove an element in the JSON object to help with testing. Shared this idea to **Baiyue Cao** and also **Nina Nurrahmawati**.
 
 ## Assignment 3
 To find the data to be used, I went to the [CUSP Data Catalog](https://datahub.cusp.nyu.edu/data-catalog) and chose the data from there.
