@@ -7,6 +7,9 @@ For the Binomial distribution, the mean is equal to $np$, where $n$ is the numbe
 
 For the sizes, I chose to use `numpy.random.randint` instead of the sample provided in the skeleton notebook just for randomness.
 
+For the Gaussian fitting (extra credit), my reference was Google and StackOverflow.
+The sample code which helped me is found here: http://firsttimeprogrammer.blogspot.com/2014/07/how-to-fit-data-to-normal-distribution.html
+
 ## Assignment 2
 For this CitiBike hypothesis, I was trying to find a hypothesis related to the time travelled but was not sure if it would show a proper difference. When I asked **Rachel Lim Xin Rong** what she did, she said she used the user type as a point of comparison so I created my hypothesis around that idea as well.
 
