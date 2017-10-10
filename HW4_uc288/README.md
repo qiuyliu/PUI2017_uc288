@@ -1,10 +1,12 @@
 # HW4_uc288
 
 ## Assignment 1
-
+Completed the CitiBike review on my own. Based the statistical test suggestion on the screenshot that was in the slides.
 
 ## Assignment 2
+I worked on this assignment on my own and tried my best to understand the articles and the analysis done in the researches. To better find the independent and dependent variables, I used the table which listed what type of variables should be present for each type of test.
 
+I shared the ANCOVA and Correlation papers I used to **Yu Chen** but we did not discuss the papers together to find the required values for the table.
 
 ## Assignment 3
 
