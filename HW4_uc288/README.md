@@ -9,10 +9,18 @@ I worked on this assignment on my own and tried my best to understand the articl
 I shared the ANCOVA and Correlation papers I used to **Yu Chen** but we did not discuss the papers together to find the required values for the table.
 
 ## Assignment 3
+I worked on this assignment on my own by following the skeleton notebook already created by Professor Bianco and simply filling up the cells that needed explaning.
 
+For the null and alternative hypothesis formulation of the "Convicted of a felony", it was the opposite of the first sample done so necessary changes needed to be made on the signs. Doing the z-test was pretty straightforward given the skeleton and the explanantion done in class.
+
+The chi-squared test was also straightforward based on the first example. To explain how to understand the chi-squared statistic computed and how it relates to the null hypothesis, I did further reading online about the chi-squared test and how to read and interpret the table.
 
 ## Assignment 4
+For this CitiBike assignment, I mostly worked on my own while following the skeleton notebook from Professor Bianco.
 
+Getting the hour of the day was the same as what we did back in the UCSL for the CitiBike challenge. I split day and night as such so that there would be an equal 12-hour split. After that, it was simply up to the scipy packages to run the tests.
+
+For the Manhattan-Brooklyn ridership, I used an online reference to get the min/max longitude and latitude of the boroughs from the GeoJSON file downloaded from NYC Planning's Open Data website. Working with shapefiles and GeoJSON files from other classes allowed me to see the format of these files and also utilizing knowledge from our previous homework of reading JSON files.
 
 ---
 ## Assignment 2: Literature choices of statistical tests
