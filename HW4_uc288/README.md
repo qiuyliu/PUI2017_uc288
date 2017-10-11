@@ -13,7 +13,7 @@ I worked on this assignment on my own by following the skeleton notebook already
 
 For the null and alternative hypothesis formulation of the "Convicted of a felony", it was the opposite of the first sample done so necessary changes needed to be made on the signs. Doing the z-test was pretty straightforward given the skeleton and the explanantion done in class.
 
-The $\chi^2$ test was also straightforward based on the first example. To explain how to understand the $\chi^2$ statistic computed and how it relates to the null hypothesis, I did further reading online about the $\chi^2$ test and how to read and interpret the table.
+The chi-squared test was also straightforward based on the first example. To explain how to understand the chi-squared statistic computed and how it relates to the null hypothesis, I did further reading online about the chi-squared test and how to read and interpret the table.
 
 ## Assignment 4
 For this CitiBike assignment, I mostly worked on my own while following the skeleton notebook from Professor Bianco.
