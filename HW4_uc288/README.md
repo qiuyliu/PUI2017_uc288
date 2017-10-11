@@ -3,6 +3,10 @@
 ## Assignment 1
 Completed the CitiBike review on my own. Based the statistical test suggestion on the screenshot that was in the slides.
 
+My CitiBikeReview file for zz1749 can be found [here](https://github.com/zhiaozhou/PUI2017_zz1749/blob/master/HW3_zz1749/CitibikeReview_uc288.md).
+
+The pull request is [here](https://github.com/zhiaozhou/PUI2017_zz1749/pull/2).
+
 ## Assignment 2
 I worked on this assignment on my own and tried my best to understand the articles and the analysis done in the researches. To better find the independent and dependent variables, I used the table which listed what type of variables should be present for each type of test.
 
