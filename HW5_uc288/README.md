@@ -11,3 +11,9 @@ So I readjusted the values I had and recomputed for the z-statistics for both th
 
 
 ## Assignment 3: Investigate linear relationships between fire arm possession, homicides by fire arms, and mass shootings for different countries, considering also the country GDP
+A bunch of different data needs to be downloaded and it needs to be reproducible so I tried doing a direct download instead of downloading the files in the code and save it in the file system.
+1. World firearms murders and ownership
+    * Direct download to pandas using **@fedhere**'s GitHub RAW download link
+2. The number of gun owned vs. the number of mass shootings 
+    * Google search on how to handle `data:application` links gave me [this reference on StackOverflow](https://stackoverflow.com/questions/41919181/python-download-file-with-pandas-urllib) and I used the idea to use urllib to download like before with the MTA API and use pandas read_csv.
+3. 
