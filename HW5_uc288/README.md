@@ -30,4 +30,6 @@ A bunch of different data needs to be downloaded and it needs to be reproducible
     
 For the data exploration plotting, I had some discussions with **Rachel Lim Xin Rong** and **Gaurav Bhardwaj** to understand which values are being plotted and how they did their plots. I adjusted mine based on the results I saw from their plots.
 
-For the modelling part, I consulted with **Rachel Lim Xin Rong** regarding the weights she used in hers and she pointed out that 1 is the default value in the scipy function for WLS so replacing infinity with 1 made sense. I also got the polyfit from **Rachel** and how to plot it.
+For the modelling part, I consulted with **Rachel Lim Xin Rong** regarding the weights she used in hers and she pointed out that 1 is the default value in the scipy function for WLS so replacing infinity with 1 made sense. However, I noticed something in the statsmodels documentation for the weights values to be passed so I passed 1/W instead of 1/sqrt(W).
+
+I also got the polyfit from **Rachel** and how to plot it.
