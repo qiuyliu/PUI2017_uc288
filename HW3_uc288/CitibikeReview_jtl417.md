@@ -18,3 +18,6 @@ This is a test of ratios, where the dependent variable is a count. We do have a 
 ## Other Comments and Suggestions
 
 The idea is a really good, interesting, and testable one, but the formulation of the hypothesis is tricky because of the fact that its hard to quantify something like "x uses citibike more than y in A time period" given the many differences in sample size. I think you did a good job dealing with that but it would be nice to hear some explanation as to why you chose the ratio (if only for myself and others who might not be as intuitive with math and inequalities/ratios.
+
+
+# FBB Chi square for proportion, not for goodness of fit, though. Good, very thorough
