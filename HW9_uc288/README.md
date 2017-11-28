@@ -7,3 +7,7 @@ Reviewed Yukun Wan (yw3447)'s and Gaurav Bhardwaj (gb1877)'s plots and created m
 
 ## Census Geospatial Analysis
 Followed the skeleton notebook by Professor Bianco and consulted **Rachel Lim Xin Rong (rxl204)** on the spatial join done.
+
+For the shapefile download, I followed the code from Professor Bianco and used a similar file checking as **Rachel Lim Xin Rong (rxl204)** by getting the 'shp' file in the directory and added additional checking to prevent redownload into PUIDATA.
+
+Also followed the SFTP instructions from Professor Bianco to get the AFF data onto compute.
