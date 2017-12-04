@@ -16,6 +16,7 @@ For the first plot which shows the relationship between Energy Use Intensity and
 
 For the second plot, it looks clear that this is a map of New York City for someone who is already familiar with seeing the map of NYC but it would have been better to add to the title that the map is of New York City. The color bar is a good way of showing the intensity of the GHG emissions per zip code but it seems strange that the values only range from 0-6 in the color bar. It's a bit ambiguous what the values are really being plotted in the map. One other additional thing that he could have added was the year of the data because the values change yearly.
 
+
 ### Esthetic
 For the first plot, the plot is of good size and the legends are readable. The colors are also distinguishable. However, I would have to say it would be good to use the alpha for the scatter plot to at least show how dense the points are the area where all the points are clumped together.
 
@@ -25,3 +26,11 @@ For the second plot, the color map chosen is a good one because when checked for
 For the scatter plot, there's not much to say since the values are labeled properly and the transformation of the values is explicitly mentioned. One way to improve the plot would be to include an explanation why log transformation was needed for these values and why the relationship was done for the log-transformed values instead of the actual values.
 
 For the choropleth map, since the values that are being plotted seem to be the log transformed values instead of the actual values, this might be some sort of deformity to the data. When plotting in a map, it would be better to plot actual values instead of transformed values. Also aggregating the values to zip code blocks might not be the best way to represent the data since each zip code block has different building types and sizes. The plot also does not mention what kind of aggregation was done to the values plotted in the choropleth map.
+
+# FBB feedback
+
+clarity: correct-color bars need units too!
+
+good work, all your comments are valuable. The labels are too small though! the tick labels are hardly readable. Also: the homework was to have 1 visualization. here there are 2 plots, and it is not clear how they are related to each other. so they are not "a visualization" but two. If the first plot identified the onvious outliers in the second plot (the 2 zips at very high GHG emissions, then they would possibly be related and conssitute a single visualization
+
+10/10
