@@ -19,3 +19,9 @@ I would have to say that this map seems a bit distorted because the figure looks
 To understand the plot further and to see how Yukun derived the values to plot the map of NYC, I read the Jupyter notebook and found that she only included buildings with Site EUI greater than 1,000 kBtu/ft2 and she also only included Multifamily Housing buildings. Since the dataset was reduced, this skews the plot because different building types have different distributions and the title is quite misleading wherein it only says 'NYC Site EUI'. Despite using a good split (quantile) to determine the breaks in the data, the quantile break is biased only towards the Multifamily Housing buildings with more than 1,000 kBtu/ft2.
 
 One other issue with aggregating the energy use intensity to the zip code level is that Yukun only got the mean of the buildings within the zip code. Although she is aggregating the buildings categorized under the same building type only, it seems a bit problematic to aggregate energy data to the zip code level because some areas might not have the same number of buildings. It would be good to have a plot with the count of Multifamily Housing buildings per zip code and apply normalization.
+
+# FBB feedback
+
+all good points. One further point is that the missing zipcodes are very distracting. In presence of missing data it would be best to plot the boundaty of NYC counties as well, so that the missing zipcodes are identifiable and the viewer has a sense of the amount of missing data
+
+10/10
