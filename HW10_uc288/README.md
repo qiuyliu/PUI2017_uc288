@@ -15,11 +15,19 @@ Converted the 2D numpy array into a pandas DataFrame for easier plotting and app
 
 I then plotted each card type time series individually with their rolling mean in their own subplot for visual comparison. I also conducted the Augmented Dickey-Fuller unit root test for each time series for the test of stationarity.
 
+### Work Distribution
+
 Initially worked on this alone but had discussions with **Juan** and **Julian** regarding the ratio and how to determine the trend.
 
 ## Task 3: Periodicity of Time Series
 
+### Work Distribution
+
+
 ## Extra Credit
+
+### Work Distribution
+
 
 
 
